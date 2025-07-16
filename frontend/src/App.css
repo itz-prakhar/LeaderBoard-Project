@@ -1,0 +1,143 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f5f7fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.dropdown {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.claim-btn {
+  background: #4caf50;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.claim-btn:hover {
+  background: #388e3c;
+}
+
+.add-user input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.add-user button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0 8px 8px 0;
+  border: none;
+  background: #2196f3;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-user button:hover {
+  background: #1976d2;
+}
+
+.last-claim {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.leaderboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar {
+  font-size: 2rem;
+  background: #e0e0e0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.points {
+  color: #ff5722;
+  font-size: 0.95rem;
+}
+
+.rank-badge {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Special styles for top 3 */
+.rank-1 {
+  background: linear-gradient(to right, gold, #fff8dc);
+}
+
+.rank-2 {
+  background: linear-gradient(to right, silver, #f0f0f0);
+}
+
+.rank-3 {
+  background: linear-gradient(to right, #cd7f32, #fbe8d3);
+}
